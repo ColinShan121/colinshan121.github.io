@@ -1,31 +1,55 @@
 # Colin Shan — Engineering Portfolio
 
-Static HTML/CSS portfolio. No dependencies or build step.
+Personal portfolio of Colin Shan, an Electrical Engineering student at
+the University of Illinois Urbana-Champaign, graduating in May 2028.
 
-## Publish
-Use the public repository `ColinShan121/colinshan121.github.io`.
-Put `index.html` and `.nojekyll` in its root. In Settings → Pages,
-select Deploy from a branch → main → /(root) → Save.
+Website: https://colinshan121.github.io
 
-## Edit locally (WSL)
-```bash
-cd /home/colin/projects
-git clone git@github.com:ColinShan121/colinshan121.github.io.git
-cd colinshan121.github.io
-code .
-python3 -m http.server 8000 --bind 127.0.0.1
-```
-Open http://localhost:8000. After editing, review desktop and phone widths.
-Stop the server with Ctrl+C, then:
-```bash
-git add index.html .nojekyll README.md
-git commit -m "Update engineering portfolio"
-git push origin main
-```
-Wait for the Pages deployment to succeed, then check the live page.
+## Contents
 
-## Content accuracy
-Research and education follow the supplied resume. Backend progress follows
-Colin's reported local validation on October 4, 2026. No backend repository URL,
-hosted demo, performance benchmark, or planned feature is presented as complete.
-The original resume PDF is excluded because it includes a phone number.
+- Freight Search: a FastAPI and PostgreSQL project featuring listing
+  creation and updates, ranked full-text search, filters, and pagination.
+- Medical imaging research at UT Southwestern.
+- Bioprinting research at UT Dallas.
+- Education, Illinois Space Society involvement, and programming skills.
+- GitHub, LinkedIn, and email contact links.
+
+Freight Search repository:
+https://github.com/ColinShan121/freight-search-platform
+
+## Technology
+
+Static HTML and CSS hosted on GitHub Pages.
+No dependencies or build step are required.
+
+## Preview locally
+
+Run from the website repository directory in WSL Ubuntu:
+
+    python3 -m http.server 8000 --bind 127.0.0.1
+
+Open http://localhost:8000 in your browser.
+Stop the server with Ctrl+C.
+
+## Edit and publish
+
+Edit index.html and preview the changes locally. Check desktop and
+mobile layouts, navigation, and external links before publishing.
+
+    git add index.html README.md .nojekyll
+    git commit -m "Update portfolio"
+    git push origin main
+
+GitHub Pages is configured to publish from main at the repository root.
+Check the Pages deployment in GitHub Actions after pushing.
+
+## Project structure
+
+- index.html — portfolio content and styles
+- .nojekyll — disables Jekyll processing
+- README.md — repository overview and editing instructions
+
+## Contact
+
+Email: colinshan2007@gmail.com
+LinkedIn: https://www.linkedin.com/in/colin-shan-7125b1384/
